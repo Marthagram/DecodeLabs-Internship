@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Check Weather Naija</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/project1.css">
+        <link rel="stylesheet" href="styles/project1_tablet.css">
+        <link rel="stylesheet" href="styles/project1_large.css">
+        <script src="scripts/project1.mjs" type="module"></script>
+        <script src="scripts/date.js" defer></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Check Weather Naija</h1>
+        </header>
+
+        <main>
+
+            <img src="images/weather.webp" alt="picture of weather" class="weather-image" loading="lazy">
+            <section class="section"></section>
+            <label for="state">Select a state:</label>
+            <select id="state">
+                <option value="">--Please choose an option--</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="kwara">kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nasarawa">Nasarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+            </select>
+        <footer>
+            <p class="year"></p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
