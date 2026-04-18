@@ -2,9 +2,17 @@
 const section = document.querySelector('.section');
 const stateSelect = document.querySelector('#state');
 
-export function displayWeather(data) {
+function displayWeather(data) {
 
-    // populate the currentWeather
+  
+
+       section.innerHTML = ''; // Wipe the section clean before adding new stuff
+    
+    // ... rest of your code creating div, h2, p tags
+
+
+  // populate the currentWeather
+
     const div = document.createElement('div');
     const stateName = document.createElement('h2');
     const description=document.createElement('p');
@@ -22,7 +30,7 @@ export function displayWeather(data) {
     image.setAttribute('SRC', iconsrc);
     image.setAttribute('alt', data.weather[0].description );
     image.setAttribute('loading', 'lazy');
-
+ 
 
 
     stateName.innerHTML=data.name;
@@ -47,16 +55,29 @@ export function displayWeather(data) {
   
     section.appendChild(div); 
 
-      
+
 }
 
-// export function selectState(data) {
+      
 
-// if (stateSelect.value === data.name) {
-//     const select = data.filter((item) => item.name === stateSelect.value);
-//     displayWeather(select);
-// }
-// }
+
+export function selectState(data) {
+    const select = data.find((item) => {
+        if (item.name === stateSelect.value) {
+            return true;  // tell find "this is the one"
+        }
+        // no else needed - if it doesn't match, keep looking
+    });
+    
+    if (select) {  // check if we actually found something
+        displayWeather(select);
+    }
+    else {
+        console.log("State not found in data:", stateSelect.value);
+    }   
+}
+
+
 
 
 

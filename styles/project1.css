@@ -33,11 +33,25 @@ header h1{
 .section{
     font-family:  'Roboto', sans-serif;
     background-color: #A5856f;
-    display: grid;
-	grid-gap: 0.5rem;
+    text-align: center;
     padding: 1rem;  
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	
   
+}
+
+label{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem;
+    display: grid;
+    justify-items: center;
+}
+
+#state{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #A5856f; ;
 }
 
 div{
