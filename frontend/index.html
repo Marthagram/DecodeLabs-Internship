@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Check Weather Naija</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/project1.css">
+        <link rel="stylesheet" href="styles/project1_tablet.css">
+        <link rel="stylesheet" href="styles/project1_large.css">
+        <script src="scripts/project1.mjs" type="module"></script>
+        <script src="scripts/date.js" defer></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Check Weather Naija</h1>
+        </header>
+
+        <main>
+
+            <img src="images/weather.webp" alt="picture of weather" class="weather-image" loading="lazy">
+            <section class="section"></section>
+          <label for="state">Select a city:
+            <select id="state">
+                <option value="">--Please choose an option--</option>
+                <option value="Umuahia">Abia - Umuahia</option>
+                <option value="Yola">Adamawa - Yola</option>
+                <option value="Uyo">Akwa Ibom - Uyo</option>
+                <option value="Awka">Anambra - Awka</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Yenagoa">Bayelsa - Yenagoa</option>
+                <option value="Makurdi">Benue - Makurdi</option>
+                <option value="Maiduguri">Borno - Maiduguri</option>
+                <option value="Calabar">Cross River - Calabar</option>
+                <option value="Asaba">Delta - Asaba</option>
+                <option value="Abakaliki">Ebonyi - Abakaliki</option>
+                <option value="Benin City">Edo - Benin City</option>
+                <option value="Ado Ekiti">Ekiti - Ado Ekiti</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Owerri">Imo - Owerri</option>
+                <option value="Dutse">Jigawa - Dutse</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Birnin Kebbi">Kebbi - Birnin Kebbi</option>
+                <option value="Lokoja">Kogi - Lokoja</option>
+                <option value="Ilorin">Kwara - Ilorin</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Lafia">Nasarawa - Lafia</option>
+                <option value="Minna">Niger - Minna</option>
+                <option value="Abeokuta">Ogun - Abeokuta</option>
+                <option value="Akure">Ondo - Akure</option>
+                <option value="Osogbo">Osun - Osogbo</option>
+                <option value="Ibadan">Oyo - Ibadan</option>
+                <option value="Jos">Plateau - Jos</option>
+                <option value="Port Harcourt">Rivers - Port Harcourt</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Jalingo">Taraba - Jalingo</option>
+                <option value="Damaturu">Yobe - Damaturu</option>
+                <option value="Gusau">Zamfara - Gusau</option>
+                <option value="Abuja">FCT - Abuja</option>
+            </select>
+            </label>
+        <footer>
+            <p class="year"></p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
+Remove-Item -Recurse -Force node_modules -ErrorAction SilentlyContinue
+Remove-Item package-lock.json -ErrorAction SilentlyContinue
+npm install express cors sqlite3 dotenv
